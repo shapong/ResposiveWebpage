@@ -1,0 +1,261 @@
+/*------------CSS for index.html-----------------*/
+/*-----------Sharika Pongubala-----------*/
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	background-image: url("Resources/images/space.jpg"), url("Resources/images/space-bg.jpg");
+	background-repeat: no-repeat, repeat-x;
+	background-size: contain;
+	background-position: top center, top left;
+}
+
+.container {
+	height:100%;
+}
+
+.back-ground {
+	max-height: 25%;
+	max-width: 100%;
+	background-image: url("Resources/images/stars.png");
+	background-size: contain;
+}
+
+.back-ground div {
+	display: inline-block;
+}
+
+.back-ground .stars {
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100%;
+	float: left;
+	display: inline;
+	position: absolute;
+}
+
+.back-ground .stars img{
+	max-width: 50%;
+	margin-left: 20%;
+}
+
+.back-ground .logo {
+	max-width: 10%;
+	height: auto;
+	margin-left: 25%;
+	margin-top: 5%;
+	position: relative;
+}
+
+.back-ground .rocket img{
+	max-width: 45%;
+}
+
+.back-ground .rocket {
+	max-width: 75%;
+	margin-left: 25%;
+	margin-top: -5%;
+}
+
+.fore-ground {
+	margin: -10% 0% 0% 0%;
+	font-size: 100%;
+}
+
+.banner{
+	color: #E9DAB3;
+	text-transform: lowercase;
+	font-family: 'Sonsie One', cursive;
+	max-width: 30%;
+	/*float: right;*/
+	margin-left: 55%;
+}
+
+.banner div {
+	margin: 0%;
+	font-size: 100%;
+	width: 100%;
+	display: block;
+}
+
+.banner div:nth-child(even) {
+	/*font-size: 8px;
+	font-size: 0.8em;*/
+	font-size: 8px;
+	font-size: 1.05vw;
+}
+.banner div:nth-child(1) {
+	/*font-size: 12px;
+	font-size: 1.15em;*/
+	font-size: 12px;
+	font-size: 1.5vw;
+}
+.banner div:nth-child(3) {
+/*	font-size: 14px;
+	font-size: 1.4em;*/
+	font-size: 14px;
+	font-size: 1.85vw;
+}
+
+.description {
+	color: #E9DAB3;
+	font-family: 'Sonsie One', cursive;
+	max-width: 26%;
+	/*float: right;*/
+	margin-left: 55%;
+	margin-top: 2%;
+}
+
+.description p:nth-child(1){
+	text-align: center;
+	font-size: 0.9vw;
+}
+
+.description p:nth-child(2){
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8vw;
+}
+
+.countdown {
+	margin-top: 2%;
+}
+
+.countdown img {
+	max-width: 20%;
+	margin-left: 58%;
+	height: auto;
+}
+
+.timer {
+	margin-left: 59%;
+	margin-top: -6%;
+	max-width: 29%;
+}
+
+.timer span {
+	color: #74491E;
+	font-size: 2.5vw;
+	padding: 0% 3.6% 0% 3.4%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.countdowntext {
+	margin-left: 59.4%;
+	margin-top: -0.35%;
+	max-width: 29%;
+}
+
+.countdowntext span {
+	color: #74491E;
+	font-size: 0.9vw;
+	padding: 0% 4.6% 0% 3.2%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.signup {
+	margin-top: 1%;
+}
+
+.signup img {
+	max-width: 15%;
+	margin-left: 60%;
+	height: auto;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers*/
+	color: #74491E;
+	font-size: 0.8vw;
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+}
+
+.signup .email {
+	margin-left: 63%;
+	margin-top: -5.3%;
+	max-width: 8.6%;
+}
+
+.signup input {
+	background-color: transparent;
+	border: none;
+	max-width: 100%;
+	height: auto;
+}
+
+.signup input:focus {
+	outline: none;
+	-webkit-input-placeholder: none;
+}
+
+.signup input:-webkit-autofill {
+	background-color: transparent !important;
+}
+
+.social_media {
+	margin-left: 55%;
+	margin-top: 4.5%;
+}
+
+.social_media img{
+	display: inline;
+	height: auto;
+	max-width: 8%;
+	margin: 0% 1% 0% 1%;
+	cursor: pointer;
+}
+.social_media img:hover {
+	-webkit-filter: grayscale(50%);
+}
+
+.astronaut {
+	margin-left: 76%;
+	max-width: 20%;
+	height: 90px;
+	position: absolute;
+	overflow: hidden;
+	margin-top: -2%;
+}
+
+.astronaut img{
+	position: relative;
+	top: -35px;
+	overflow: hidden;
+	height: 100px;
+}
+
+.astronaut img:hover {
+	margin-top: 0%;
+}
+
+.astronaut:hover {
+	overflow: visible;
+	height: 50px;
+}
+
+.thought{
+	max-width: 20%;
+	margin-left: 83.1%;
+	margin-top: -5.0%;
+	position: relative;
+}
+
+.thought span {
+	color: #74491E;
+	font-size: 0.48vw;
+	text-align: center;
+	display: block;
+	visibility: hidden;
+}
+
+/*.img-responsive {
+	using my own method to make image sizes responsive
+	using max-width: x%
+	height: auto;
+}*/

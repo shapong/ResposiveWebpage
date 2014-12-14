@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="bootstrap-3.3.1-dist/dist/css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="script.js"></script> <!--My javascript file----->
+
+<!----FONTS--->
+<link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+
+<div class="container">
+
+	<div class="back-ground">
+		<div class="logo">
+			<img src="Resources/images/logo.png" class='img-responsive'></img>
+		</div>
+		<div class="stars">
+			<img src="Resources/images/stars.png" class='img-responsive'></img>
+		</div>
+		<div class="rocket" id="rocket">
+			<img src="Resources/images/rocket.png" class='img-responsive'></img>
+		</div>
+	</div>
+
+	<div class="fore-ground">
+		
+		<div class="row">
+			<div class="banner">
+			<div>We are working hard<br>on a distant gallaxy</div>
+			<div>so we will be ready to launch</div>
+			<div>our new website</div>
+			<div>just stay tuned & get updates</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="countdown">
+				<img src="Resources/images/countdown.png" class='img-responsive'></img>
+
+				<div class="timer">
+						<span id="days"><strong>00</strong></span>
+						<span id="hours"><strong>00</strong></span>
+						<span id="mins"><strong>00</strong></span>
+						<span id="seconds"><strong>00</strong></span>
+						
+						<script type="text/javascript">
+						countDown('01:01:10:05',['days','hours','mins','seconds'],
+						function(){
+							console.log("Finished!");	
+						});
+						</script>
+				</div>
+
+				<div class ="countdowntext"> 
+					<span><strong>Days</strong></span>
+					<span><strong>Hours</strong></span>
+					<span><strong>Minutes</strong></span>
+					<span><strong>Seconds</strong></span>
+				</div>
+
+			</div><!----------End of countdown here----------->
+
+		</div>
+
+		<div class="row">
+			<div class="description">
+			<p>The subtitle of this section</p>
+			<p>This webpage uses responsive design concepts and the Twitter bootstrap grid layout.
+			Sign up below and click the button to watch the rocket fly!
+			Don't forget to share with your friends by using the links below!
+			Come back when the count down is over!</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="signup">
+				<img src="Resources/images/signup.png" class="img-responsive" onclick="initiateLaunch();"></img>
+				<div class="email">
+					<input type="email" placeholder="YOUR EMAIL HERE" id="email"></input>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="social_media">
+				<a href="http://www.facebook.com/" target="_blank"><img src="Resources/images/facebook-icon.png" class='img-responsive'></img></a>
+				<a href="https://plus.google.com/" target="_blank"><img src="Resources/images/google-icon.png" class='img-responsive'></img></a>
+				<a href="https://twitter.com/" target="_blank"><img src="Resources/images/twitter-icon.png" class='img-responsive'></img></a>
+				<a href="https://www.linkedin.com/" target="_blank"><img src="Resources/images/linkedin-icon.png" class='img-responsive'></img></a>
+				<a href="http://www.pinterest.com/" target="_blank"><img src="Resources/images/pinterest-icon.png" class='img-responsive'></img></a>
+			</div>
+		</div>
+		
+		<div class="row">
+
+				<div class="astronaut">
+					<img src="Resources/images/astronaut.png" class='img-responsive'></img>
+				</div>
+				<div class="thought">
+					<span>Wow!</span><span>That's a big</span><span>screen</span>
+				</div>
+		</div>
+
+	</div><!----- Foreground ending here------->
+
+
+
+</div><!-----container ending------>
+
+
+
+<script>
+$(".astronaut").mouseover(function() {
+		console.log("///////////////////////////");
+		$(".thought span").css('visibility', 'visible');
+});
+$(".astronaut").mouseout(function() {
+		console.log("///////////////////////////");
+		$(".thought span").css('visibility', 'hidden');
+});
+
+</script>
+
+
+</body>
+
+</html>
